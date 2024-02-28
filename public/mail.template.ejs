@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmation</title>
+    <style type="text/css">
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: 0 auto; padding: 20px; }
+        .header { background-color: #f2f2f2; padding: 10px; text-align: center; }
+        .content { margin-top: 20px; }
+        .footer { margin-top: 40px; font-size: 0.8em; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Booking Confirmation</h1>
+        </div>
+        <div class="content">
+            <p>Dear <%= name %>,</p>
+            <p>Thank you for your booking. Here are the details of your reservation:</p>
+            <ul>
+                <li>Check-In Date: <%= checkIn %></li>
+                <li>Check-Out Date: <%= checkOut %></li>
+                <li>Number of Guests: <%= numberOfGuest %></li>
+                <li>Number of Rooms: <%= numberOfRooms %></li>
+                <li>Total Nights: <%= totalNight %></li>
+                <li>Actual Price: <%= actualPrice %></li>
+                <li>Sub Price: <%= subTotal %></li>
+                <li>Discount: <%= discount %> % </li>
+                <li>Total Price: <%= totalPrice %></li>
+                <li>Payment Method: <%= paymetMethod %></li>
+                <li>Transaction ID: <%= transactionId %></li>
+                <li>Booking Status: <%= status %></li>
+                <li>Booking Room Numbers: <%= roomNumbers %></li>
+                <li>Booking Room Type: <%= roomType %></li>
+            </ul>
+            <p>If you have any questions or need to make any changes to your booking, please contact us.</p>
+        </div>
+        <div class="footer">
+            <p>Address: Bengaluru, Karnataka, India, 545454</p>
+            <p>Phone: +91 1010101010</p>
+            <p>Email: <%= to %></p>
+        </div>
+    </div>
+</body>
+</html>
